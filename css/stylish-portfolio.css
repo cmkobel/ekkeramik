@@ -162,6 +162,20 @@ hr.small {
     -o-background-size: cover;
 }
 
+/* Header Logo */
+
+.header-logo {
+    height: 10rem;
+    max-width: 100%;
+    width: auto;
+}
+
+@media(max-width:768px) {
+    .header-logo {
+        height: 5rem;
+    }
+}
+
 /* About */
 
 .about {
