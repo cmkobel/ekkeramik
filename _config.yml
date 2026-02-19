@@ -2,7 +2,7 @@
 title: EK Keramik 
 email: evakobel7@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  EK Keramik & Kunst – Håndlavet keramik af Eva Kobel, Assens: Oplev unikt, håndlavet keramik fra Eva Kobels værksted i Sandager ved Assens på Fyn. Skåle, kander, tallerkner og skulpturer i enkle former og klare farver – alt drejet og brændt i eget værksted. Køb direkte fra butikken, på markeder og udstillinger, eller tilmeld dig keramikkursus med plads til kun 5 deltagere. Besøg ekkeramik.dk og find dit næste unikke stykke dansk kunsthåndværk.
+  EK Keramik – Håndlavet keramik af Eva Kobel, Assens: Oplev unikt, håndlavet keramik fra Eva Kobels værksted i Sandager ved Assens på Fyn. Skåle, kander, tallerkner og skulpturer i enkle former og klare farver – alt drejet og brændt i eget værksted. Køb direkte fra butikken, på markeder og udstillinger, eller tilmeld dig keramikkursus med plads til kun 5 deltagere. Besøg ekkeramik.dk og find dit næste unikke stykke dansk kunsthåndværk.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
@@ -10,8 +10,8 @@ url: "" # the base hostname & protocol for your site
 owner: Eva Kobel
 email: evakobel7@gmail.com
 facebook_username: eva.kobel.3
-twitter_username:
-github_username:
+#twitter_username:
+#github_username:
 address:
   - line:
   - line:
