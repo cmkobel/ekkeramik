@@ -1,5 +1,5 @@
 ---
-title: Eva Kobel
+title: Keramiker Eva Kobel
 image: img/ek_portrait1.jpg
 ---
 
