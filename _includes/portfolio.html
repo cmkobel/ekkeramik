@@ -1,31 +1,19 @@
+{% assign section = site.sections | where: "slug", "portfolio" | first %}
 <section id="portfolio" class="portfolio">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 text-center">
 <div class="row">
+          {% for image in section.images %}
           <div class="col-md-6">
             <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="img/ek1.jpg">
+              <img class="img-portfolio img-responsive" src="{{ image }}">
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="img/ek2.jpg">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="img/ek3.jpg">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="img/ek4.jpg">
-            </div>
-          </div>
+          {% endfor %}
         </div>
         <!-- /.row (nested) -->
-        <a href="https://www.instagram.com/evakobel" target="_blank" rel="noopener noreferrer" class="btn btn-dark"><i class="fa fa-instagram"></i> Se mere på Instagram</a>
+        <a href="{{ section.cta_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark">{% if section.cta_icon %}<i class="{{ section.cta_icon }}"></i> {% endif %}{{ section.cta_text }}</a>
       </div>
       <!-- /.col-lg-10 -->
     </div>

@@ -22,5 +22,10 @@ copyright: Copyright (c) 2026 Eva Kobel. All rights reserved.
 # API settings
 google_api_key:
 
+# Collections
+collections:
+  sections:
+    output: false
+
 # Build settings
 markdown: kramdown

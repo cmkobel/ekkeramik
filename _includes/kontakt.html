@@ -1,12 +1,13 @@
+{% assign section = site.sections | where: "slug", "kontakt" | first %}
 <section id="contact" class="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
-        <h2>Kontakt</h2>
-        <p class="lead">Værksted og salg</p>
-        <p class="lead">Har du spørgsmål eller vil du høre mere? Skriv en besked, så vender jeg tilbage hurtigst muligt.</p>
-        <form action="https://formspree.io/f/xvzbbvnn" method="POST">
-          <input type="hidden" name="_subject" value="Besked fra EK Keramik hjemmeside">
+        <h2>{{ section.title }}</h2>
+        <p class="lead">{{ section.lead }}</p>
+        <p class="lead">{{ section.intro }}</p>
+        <form action="{{ section.form_action }}" method="POST">
+          <input type="hidden" name="_subject" value="{{ section.form_subject }}">
           <div class="form-group">
             <label for="name">Navn</label>
             <input type="text" class="form-control" id="name" name="name" required>

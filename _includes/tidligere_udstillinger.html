@@ -1,76 +1,18 @@
+{% assign section = site.sections | where: "slug", "tidligere_udstillinger" | first %}
 <section id="udstillinger" class="udstillinger">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
-        <h2>Tidligere udstillinger</h2>
+        <h2>{{ section.title }}</h2>
         <div class="udstillinger-grid">
-
+          {% for exhibition in section.exhibitions %}
           <div class="udstilling-item">
-            <strong><a href="https://www.facebook.com/events/langes%C3%B8vej-146-5462-morud-danmark/kunst-og-h%C3%B8stmarked-ved-langes%C3%B8/600102059824851/" target="_blank" rel="noopener noreferrer">Høstmarked Langesø</a></strong>
+            <strong><a href="{{ exhibition.url }}" target="_blank" rel="noopener noreferrer">{{ exhibition.name }}</a></strong>
+            {% if exhibition.description %}
+            <span>{{ exhibition.description }}</span>
+            {% endif %}
           </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.bernardshus.dk/" target="_blank" rel="noopener noreferrer">Høstmarked Nørregård</a></strong>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.aeblefestivalassens.dk/foedevaremarked/" target="_blank" rel="noopener noreferrer">Æblefestival Assens Fødevaremarked</a></strong>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://kulturmaskinen.dk/filosoffen/udstillinger-og-events" target="_blank" rel="noopener noreferrer">Julemarked Filosoffen</a></strong>
-          </div>
-
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.sanderumgaard.dk/marked" target="_blank" rel="noopener noreferrer">Forårsmarked Sanderumgaard</a></strong>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.gallerilangager.dk/" target="_blank" rel="noopener noreferrer">Galleri Langager</a></strong>
-            <span>Foreningsdrevet Kunstgalleri og Café, Helnæs. Medlem 2019–2024</span>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.lillebaeltsvaerftet.dk/" target="_blank" rel="noopener noreferrer">Lillebælt Værftet</a></strong>
-            <span>Kunsthåndværkermarked, sommersøndage. Det gamle skibsværft i Middelfart</span>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.facebook.com/profile.php?id=100090760992646" target="_blank" rel="noopener noreferrer">Smilende Kirstine</a></strong>
-            <span>Adelgade 40, Bogense</span>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.kulturhusetindustrien.dk/" target="_blank" rel="noopener noreferrer">Kunstforeningen Industrien i Aarup</a></strong>
-            <span>Julemarked i december 2023. Julesalg af årets kunstnere, indgang via biblioteket.</span>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.kulturhusetindustrien.dk/" target="_blank" rel="noopener noreferrer">Industrien i Aarup</a></strong>
-            <span>Udstiller sammen med <a href="https://www.instagram.com/artbykhelledie" target="_blank" rel="noopener noreferrer">Karina Helledie Vandkrog</a>. En udstilling der tager udgangspunkt i naturens kraft, lys og livfuldhed.</span>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://hoervaevsmuseet.dk/" target="_blank" rel="noopener noreferrer">Hørvævsmuseet på Krengerup slot</a></strong>
-            <span>Livfuld keramik 13.6.–16.7.2023. Lertøj i klare glade farver står smukt sammen med hørrets søvgrå. Skåle, kander, fade, krukker – og en flok får!</span>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://www.gallerilangager.dk/" target="_blank" rel="noopener noreferrer">Naturaftryk – en sanseudstilling</a></strong>
-            <span>3.6.–4.7.2022, Galleri Langager. 4 kunstnere om naturen og de aftryk, indtryk og udtryk den kommer med. Reception og artisttalk 4.6.2022 kl. 14.00.</span>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="https://galleriknaegt.dk/" target="_blank" rel="noopener noreferrer">Galleri Knægt, Bogense</a></strong>
-            <span>Event i gårdhaven, august 2020</span>
-          </div>
-
-          <div class="udstilling-item">
-            <strong><a href="http://www.vejlekunstforeningmoellen.dk/" target="_blank" rel="noopener noreferrer">Vejle Kunstforening Møllen</a></strong>
-            <span>December 2020 og 2022</span>
-          </div>
-
+          {% endfor %}
         </div>
       </div>
     </div>
