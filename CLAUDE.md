@@ -33,8 +33,10 @@ navigation → header → om → services → kontakt → callout → portfolio 
 - `kontakt.html` — contact/address section
 - `footer.html` — footer with social links pulled from `_config.yml`
 
-**Site-wide variables** (owner, email, telephone, address, Facebook handle, Google Maps API key) are set in `_config.yml` and accessed via `{{ site.* }}` in includes.
+**Site-wide variables** (owner, email, telephone, address, Facebook handle) are set in `_config.yml` and accessed via `{{ site.* }}` in includes. The Google Maps API key is no longer used.
 
-**Assets:** Bootstrap 3 + Font Awesome (both vendored locally in `css/`, `js/`, `font-awesome/`). Custom styles in `css/stylish-portfolio.css`. Custom JS (sidebar toggle, smooth scroll, map interaction) in `js/custom.js`.
+**Assets:** Bootstrap 3 + Font Awesome (both vendored locally in `css/`, `js/`, `font-awesome/`). Custom styles in `css/stylish-portfolio.css`. Custom JS (sidebar toggle, smooth scroll) in `js/custom.js`. Leaflet.js loaded from CDN in `map.html`.
 
-**Images:** Logo `img/ekkeramik_sort_web.png`, favicon `img/ek_ikon_sort_web_kvadrat.png`, portfolio images `img/portfolio-1.jpg` through `portfolio-4.jpg`.
+**Images:** Logo `img/ekkeramik_sort_web.png`, favicon `img/ek_ikon_sort_web_kvadrat.png`, portfolio images `img/ek1.jpg` through `img/ek4.jpg` (square), portrait `img/ek_portrait1.jpg`.
+
+**Map:** `map.html` uses Leaflet.js (CDN) with OpenStreetMap tiles. The map is static (non-interactive) with a permanent tooltip marker at Torupvej 7, Sandager (55.32779, 9.93626). Clicking anywhere on the map opens `https://maps.app.goo.gl/f6z2HgVGCYrWafji7` in a new tab via a transparent overlay link.
