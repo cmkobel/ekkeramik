@@ -6,4 +6,6 @@ Gå ind i mappen [_sections](https://github.com/cmkobel/ekkeramik/tree/master/_s
 
 Du kan også godt flytte lidt rundt på billeder, men hvis du vil lave større strukturelle ændringer, så sig til.
 
+Og sig til hvis noget driller.
+
 KH
