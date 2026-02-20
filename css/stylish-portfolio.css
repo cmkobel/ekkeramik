@@ -181,6 +181,22 @@ hr.small {
     border-radius: 4px;
 }
 
+/* Instagram Button */
+
+.btn-instagram {
+    border-radius: 0;
+    color: #fff;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border: none;
+}
+
+.btn-instagram:hover,
+.btn-instagram:focus,
+.btn-instagram:active {
+    color: #fff;
+    background: linear-gradient(45deg, #e08020, #d55a30, #c91f38, #b81e5a, #a81578);
+}
+
 /* Portfolio */
 
 .portfolio {
