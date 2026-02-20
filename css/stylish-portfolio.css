@@ -276,23 +276,23 @@ hr.small {
 
 .vaerksted {
     padding: 50px 0;
-    background-color: #e8e8e8;
-    color: #222;
+    background-color: #539182;
+    color: #fff;
 }
 
 .vaerksted a {
-    color: #3a6a9a;
+    color: #d4eeea;
 }
 
 .vaerksted a:hover {
-    color: #1a2e4a;
+    color: #fff;
 }
 
 .vaerksted .btn-light,
 .vaerksted .btn-light:hover,
 .vaerksted .btn-light:focus,
 .vaerksted .btn-light:active {
-    color: #222;
+    color: #539182;
 }
 
 /* Tidligere udstillinger */
