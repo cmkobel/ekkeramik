@@ -74,10 +74,6 @@ hr.small {
     margin-right: -250px;
     overflow-y: auto;
     background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
 
@@ -137,10 +133,6 @@ hr.small {
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
 
@@ -156,10 +148,7 @@ hr.small {
     width: 100%;
     height: 100%;
     background: url(../img/bg.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 /* Header Logo */
@@ -183,45 +172,13 @@ hr.small {
     padding: 50px 0;
 }
 
-.about-portrait {
-    max-height: 250px;
-    overflow: hidden;
-}
+/* Section Image */
 
-.about-portrait img {
-    width: 100%;
-    height: 100%;
+.section-image {
+    max-width: 100%;
+    max-height: 400px;
     object-fit: cover;
-}
-
-@media(max-width:768px) {
-    .about-portrait {
-        max-height: 200px;
-    }
-}
-
-/* Services */
-
-.services {
-    padding: 50px 0;
-}
-
-.service-item {
-    margin-bottom: 30px;
-}
-
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    border-radius: 4px;
 }
 
 /* Portfolio */
@@ -236,17 +193,6 @@ hr.small {
 
 .img-portfolio {
     margin: 0 auto;
-}
-
-
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
 }
 
 /* Udstilling og salg */
@@ -315,11 +261,7 @@ hr.small {
 }
 
 .udstillinger-grid {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
     column-count: 3;
-    -webkit-column-gap: 2em;
-    -moz-column-gap: 2em;
     column-gap: 2em;
     margin-top: 20px;
 }
@@ -328,8 +270,6 @@ hr.small {
     display: inline-block;
     width: 100%;
     margin-bottom: 12px;
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
     break-inside: avoid;
 }
 
@@ -350,16 +290,12 @@ hr.small {
 
 @media(max-width: 992px) {
     .udstillinger-grid {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
         column-count: 2;
     }
 }
 
 @media(max-width: 600px) {
     .udstillinger-grid {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
         column-count: 1;
     }
 }

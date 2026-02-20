@@ -8,8 +8,8 @@
           {% for address in site.address %}
           {{ address.line }}<br>
           {% endfor %}
-          CVR: 41035625<br>
-          MobilePay: 782046
+          CVR: {{ site.cvr }}<br>
+          MobilePay: {{ site.mobilepay }}
         </p>
         <ul class="list-unstyled">
           <li><i class="fa fa-phone fa-fw"></i> {{ site.telephone }}</li>

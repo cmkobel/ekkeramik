@@ -17,10 +17,9 @@ address:
   - line: 5610 Assens
   # Feel free to add more lines here 
 telephone: +45 2946 7904
+cvr: 41035625
+mobilepay: 782046
 copyright: Copyright (c) 2026 Eva Kobel. All rights reserved.
-
-# API settings
-google_api_key:
 
 # Collections
 collections:
