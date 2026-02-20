@@ -183,6 +183,23 @@ hr.small {
     padding: 50px 0;
 }
 
+.about-portrait {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.about-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:768px) {
+    .about-portrait {
+        max-height: 200px;
+    }
+}
+
 /* Services */
 
 .services {
