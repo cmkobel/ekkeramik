@@ -249,6 +249,29 @@ hr.small {
     margin: 10px;
 }
 
+/* Udstilling og salg */
+
+.udstilling-og-salg {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.salg-item {
+    margin-bottom: 30px;
+}
+
+.salg-item strong {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.salg-item span {
+    display: block;
+    color: #555;
+    line-height: 1.6;
+}
+
 /* Åbent værksted */
 
 .vaerksted {
@@ -263,6 +286,13 @@ hr.small {
 
 .vaerksted a:hover {
     color: #fff;
+}
+
+.vaerksted .btn-light,
+.vaerksted .btn-light:hover,
+.vaerksted .btn-light:focus,
+.vaerksted .btn-light:active {
+    color: #1a2e4a;
 }
 
 /* Tidligere udstillinger */
