@@ -17,12 +17,9 @@ exhibitions:
   - name: Lillebælt Værftet
     url: https://www.lillebaeltsvaerftet.dk/
     description: Kunsthåndværkermarked, sommersøndage. Det gamle skibsværft i Middelfart
-  - name: Smilende Kirstine
-    url: https://www.facebook.com/profile.php?id=100090760992646
-    description: Adelgade 40, Bogense
   - name: Kunstforeningen Industrien i Aarup
     url: https://www.kulturhusetindustrien.dk/
-    description: Julemarked i december 2023. Julesalg af årets kunstnere, indgang via biblioteket.
+    description: Julemarked i december 2023. Julesalg af årets kunstnere
   - name: Industrien i Aarup
     url: https://www.kulturhusetindustrien.dk/
     description: "Udstiller sammen med [Karina Helledie Vandkrog](https://www.instagram.com/artbykhelledie){:target=\"_blank\" rel=\"noopener noreferrer\"}. En udstilling der tager udgangspunkt i naturens kraft, lys og livfuldhed."
