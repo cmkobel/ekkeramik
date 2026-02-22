@@ -2,22 +2,18 @@
 <section id="vaerksted" class="vaerksted">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-lg-7 col-lg-offset-1">
         <h2>{{ section.title }}</h2>
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="lead">
-            {{ section.content }}
-            </div>
-            <a href="{{ section.cta_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-light">{{ section.cta_text }}</a>
-          </div>
-          {% if section.image %}
-          <div class="col-lg-4 text-center vaerksted-image">
-            <img src="{{ section.image }}" alt="{{ section.title }}" class="section-image">
-          </div>
-          {% endif %}
+        <div class="lead">
+        {{ section.content }}
         </div>
+        <a href="{{ section.cta_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-light">{{ section.cta_text }}</a>
       </div>
+      {% if section.image %}
+      <div class="col-lg-3 text-center vaerksted-image">
+        <img src="{{ section.image }}" alt="{{ section.title }}" class="section-image">
+      </div>
+      {% endif %}
     </div>
   </div>
 </section>

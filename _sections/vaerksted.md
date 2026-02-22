@@ -5,7 +5,7 @@ cta_text: Se kurser
 cta_url: "https://verninge.husflid.dk/kurser?sted=Keramikv%C3%A6rkstedet%20Sandager"
 ---
 
-Ro i kroppen og ler i hænderne!
+**Ro i kroppen og ler i hænderne!**
 
 Kursus i ler – formgivning og teknikker.
 Modellere, dreje og pladeteknik.
