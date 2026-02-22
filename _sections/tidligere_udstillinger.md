@@ -25,7 +25,7 @@ exhibitions:
     description: Julemarked i december 2023. Julesalg af årets kunstnere, indgang via biblioteket.
   - name: Industrien i Aarup
     url: https://www.kulturhusetindustrien.dk/
-    description: "Udstiller sammen med <a href=\"https://www.instagram.com/artbykhelledie\" target=\"_blank\" rel=\"noopener noreferrer\">Karina Helledie Vandkrog</a>. En udstilling der tager udgangspunkt i naturens kraft, lys og livfuldhed."
+    description: "Udstiller sammen med [Karina Helledie Vandkrog](https://www.instagram.com/artbykhelledie){:target=\"_blank\" rel=\"noopener noreferrer\"}. En udstilling der tager udgangspunkt i naturens kraft, lys og livfuldhed."
   - name: Hørvævsmuseet på Krengerup slot
     url: https://hoervaevsmuseet.dk/
     description: Livfuld keramik 13.6.–16.7.2023. Lertøj i klare glade farver står smukt sammen med hørrets søvgrå. Skåle, kander, fade, krukker – og en flok får!
