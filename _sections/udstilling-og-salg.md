@@ -15,4 +15,6 @@ shops:
   - name: Torup Bakkegård – gårdbutik
     url: https://torupbakkegaard.dk/gaardbutikken/
     description: "Udstiller fra påske til jul.<br>Skåle · kander · tallerkner<br>Middelfartvej 105, 5610 Assens"
+facebook_text: Følg med på Facebook
+facebook_url: "https://www.facebook.com/eva.kobel.3/?locale=da_DK"
 ---

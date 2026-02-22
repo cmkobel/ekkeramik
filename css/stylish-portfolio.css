@@ -181,6 +181,22 @@ hr.small {
     border-radius: 4px;
 }
 
+/* Facebook Button */
+
+.btn-facebook {
+    border-radius: 0;
+    color: #fff;
+    background-color: #1877f2;
+    border: none;
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active {
+    color: #fff;
+    background-color: #1466d0;
+}
+
 /* Instagram Button */
 
 .btn-instagram {
