@@ -276,11 +276,16 @@ hr.small {
     color: #fff;
 }
 
-.vaerksted .btn-light,
+.vaerksted .btn-light {
+    color: #fff;
+    background-color: #8b6e4e;
+}
+
 .vaerksted .btn-light:hover,
 .vaerksted .btn-light:focus,
 .vaerksted .btn-light:active {
-    color: #539182;
+    color: #fff;
+    background-color: #6e5639;
 }
 
 @media(max-width: 1199px) {
