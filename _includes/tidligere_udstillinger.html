@@ -9,7 +9,7 @@
           <div class="udstilling-item">
             <strong><a href="{{ exhibition.url }}" target="_blank" rel="noopener noreferrer">{{ exhibition.name }}</a></strong>
             {% if exhibition.description %}
-            <span>{{ exhibition.description }}</span>
+            <span>{{ exhibition.description | markdownify }}</span>
             {% endif %}
           </div>
           {% endfor %}
