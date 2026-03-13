@@ -3,11 +3,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 text-center">
+{% assign alt_texts = "Håndlavet keramik skål af Eva Kobel|Keramik kande fra EK Keramik værksted|Håndlavet keramik tallerken, EK Keramik|Keramik skulptur af Eva Kobel, Fyn" | split: "|" %}
 <div class="row">
           {% for image in section.images %}
           <div class="col-md-6">
             <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="{{ image }}" alt="EK Keramik">
+              <img class="img-portfolio img-responsive" src="{{ image }}" alt="{{ alt_texts[forloop.index0] }}">
             </div>
           </div>
           {% endfor %}
