@@ -35,10 +35,10 @@ Prioritized list of actions to improve Google ranking for ekkeramik.dk.
 - Use natural Danish keywords: "handlavet keramik Fyn", "keramikkursus Assens", "dansk kunsthandvaerk", "keramik vaerksted"
 
 ### 4. Improve page speed
-- Add `loading="lazy"` to portfolio images (ek1-ek4)
-- Add explicit `width`/`height` attributes to images (improves Core Web Vitals / CLS)
-- Preload hero background image: `<link rel="preload" href="img/bg.jpg" as="image">`
-- Preconnect to Google Fonts: `<link rel="preconnect" href="https://fonts.googleapis.com">`
+- ~~Add `loading="lazy"` to portfolio images (ek1-ek4)~~ DONE
+- ~~Add explicit `width`/`height` attributes to images (improves Core Web Vitals / CLS)~~ DONE
+- ~~Preload hero background image~~ DONE
+- ~~Preconnect to Google Fonts~~ DONE
 - Consider whether all of Bootstrap 3 + jQuery + Font Awesome is needed, or if it can be replaced with lightweight CSS
 
 ---
@@ -46,9 +46,9 @@ Prioritized list of actions to improve Google ranking for ekkeramik.dk.
 ## Medium priority
 
 ### 5. Technical on-page improvements
-- Add `<meta name="robots" content="index, follow">` in head.html
-- Add `<link rel="alternate" hreflang="da" href="https://ekkeramik.dk/">` (signals the language)
-- Add `changefreq` and `lastmod` to sitemap.xml
+- ~~Add `<meta name="robots" content="index, follow">` in head.html~~ DONE
+- ~~Add `<link rel="alternate" hreflang="da">` (signals the language)~~ DONE
+- ~~Add `changefreq` to sitemap.xml~~ DONE (`lastmod` was already present)
 - Consider adding Twitter Card meta tags
 
 ### 6. Get backlinks

@@ -8,7 +8,7 @@
           {% for image in section.images %}
           <div class="col-md-6">
             <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="{{ image }}" alt="{{ alt_texts[forloop.index0] }}">
+              <img class="img-portfolio img-responsive" src="{{ image }}" alt="{{ alt_texts[forloop.index0] }}" width="1200" height="1200" loading="lazy">
             </div>
           </div>
           {% endfor %}

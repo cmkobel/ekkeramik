@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="{{ site.owner }}">
+  <meta name="robots" content="index, follow">
 
   <title>EK Keramik – Håndlavet keramik af Eva Kobel, Fyn</title>
 
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Language -->
+  <link rel="alternate" hreflang="da" href="{{ site.url }}{{ page.url }}">
 
   <!-- Open Graph -->
   <meta property="og:title" content="EK Keramik – Håndlavet keramik af Eva Kobel, Fyn">
@@ -64,9 +68,14 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-  <!-- Custom Fonts -->
+  <!-- Preconnect & Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
     rel="stylesheet" type="text/css">
+
+  <!-- Preload hero background -->
+  <link rel="preload" href="img/bg.jpg" as="image">
 
 </head>
