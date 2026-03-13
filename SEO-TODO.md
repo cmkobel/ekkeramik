@@ -1,78 +1,78 @@
-# SEO Forbedringer / SEO Improvements
+# SEO Improvements
 
-Prioriteret liste over tiltag for at forbedre Google-placeringen af ekkeramik.dk.
+Prioritized list of actions to improve Google ranking for ekkeramik.dk.
 
-## Allerede implementeret
+## Already implemented
 
 - Structured data (LocalBusiness JSON-LD)
 - Open Graph meta tags
 - Canonical URL
 - Sitemap + robots.txt
-- Beskrivende alt-tekster på billeder
-- sr-only H1 med keywords
+- Descriptive alt texts on images
+- sr-only H1 with keywords
 
 ---
 
-## Hoj prioritet
+## High priority
 
-### 1. Google Search Console
-- Opret konto: https://search.google.com/search-console
-- Verificer ejerskab af ekkeramik.dk (DNS TXT-record eller HTML-fil)
-- Indsend sitemap: https://ekkeramik.dk/sitemap.xml
-- Brug til at se hvilke sogeord der driver trafik
+### 1. Register with Google Search Console
+- Create account: https://search.google.com/search-console
+- Verify ownership of ekkeramik.dk (DNS TXT record or HTML file)
+- Submit sitemap: https://ekkeramik.dk/sitemap.xml
+- Use it to see which queries drive traffic
 
-### 2. Google Business Profile
-- Opret profil: https://business.google.com
-- Tilknyt ekkeramik.dk
-- Tilf billeder, abningstider ("abent efter aftale"), kategorier (keramiker, kunsthandvaerk)
-- Kritisk for lokale sogninger ("keramik Fyn", "keramiker Assens")
+### 2. Create a Google Business Profile
+- Create profile: https://business.google.com
+- Link to ekkeramik.dk
+- Add photos, opening hours ("open by appointment"), categories (ceramicist, crafts)
+- Critical for local searches ("keramik Fyn", "keramiker Assens")
 
-### 3. Mere tekstindhold
-- Udvid om-sektionen med mere om Evas proces, materialer, filosofi
-- Overvej en blog/nyheds-sektion (Jekyll understotter dette nativt):
-  - Indlaeg om udstillinger, nyt vaerk, vaerksted-oplevelser
-  - Hvert indlaeg er en ny side Google kan indeksere
-- Brug naturlige danske sogeord: "handlavet keramik Fyn", "keramikkursus Assens", "dansk kunsthandvaerk", "keramik vaerksted"
+### 3. Add more textual content
+- Expand the about section with more about Eva's process, materials, philosophy
+- Consider a blog/news section (Jekyll supports this natively):
+  - Posts about exhibitions, new work, workshop experiences
+  - Each post is a new indexable page for Google
+- Use natural Danish keywords: "handlavet keramik Fyn", "keramikkursus Assens", "dansk kunsthandvaerk", "keramik vaerksted"
 
-### 4. Forbedre sidehastighed
-- Tilf `loading="lazy"` til portfolio-billeder (ek1-ek4)
-- Tilf eksplicitte `width`/`height`-attributter til billeder (forbedrer Core Web Vitals / CLS)
-- Preload hero-baggrundsbilledet: `<link rel="preload" href="img/bg.jpg" as="image">`
-- Preconnect til Google Fonts: `<link rel="preconnect" href="https://fonts.googleapis.com">`
-- Overvej om alt Bootstrap 3 + jQuery + Font Awesome er nodvendigt, eller om det kan erstattes med letvagts-CSS
-
----
-
-## Middel prioritet
-
-### 5. Tekniske on-page forbedringer
-- Tilf `<meta name="robots" content="index, follow">` i head.html
-- Tilf `<link rel="alternate" hreflang="da" href="https://ekkeramik.dk/">` (signalerer sproget)
-- Tilf `changefreq` og `lastmod` til sitemap.xml
-- Overvej at tilf Twitter Card meta tags
-
-### 6. Backlinks
-- Fa links fra udstillings-/markedshjemmesider (Sanderumgaard, Clausholm, Langeso)
-- Verninge Husflid bor linke tilbage til ekkeramik.dk
-- Tilmeld til danske erhvervs-kataloger: Krak, Eniro, De Gule Sider
-- Tilmeld til kunsthandvaerks-kataloger: Dansk Kunsthandvaerk, Danish Crafts
-- Kontakt lokale medier/blogs om feature-artikler
-
-### 7. Sociale medier
-- Post regelmaessigt pa Instagram med link til hjemmesiden
-- Opret/vedligehold en Facebook-side der linker til ekkeramik.dk
-- Del blogindlaeg (hvis oprettet) pa sociale medier
+### 4. Improve page speed
+- Add `loading="lazy"` to portfolio images (ek1-ek4)
+- Add explicit `width`/`height` attributes to images (improves Core Web Vitals / CLS)
+- Preload hero background image: `<link rel="preload" href="img/bg.jpg" as="image">`
+- Preconnect to Google Fonts: `<link rel="preconnect" href="https://fonts.googleapis.com">`
+- Consider whether all of Bootstrap 3 + jQuery + Font Awesome is needed, or if it can be replaced with lightweight CSS
 
 ---
 
-## Lav prioritet / nice-to-have
+## Medium priority
 
-### 8. Yderligere strukturerede data
-- Tilf `Event` schema for kommende markeder/udstillinger
-- Tilf `Course` schema for keramikkurser
-- Tilf `Product` schema hvis enkeltprodukter vises
+### 5. Technical on-page improvements
+- Add `<meta name="robots" content="index, follow">` in head.html
+- Add `<link rel="alternate" hreflang="da" href="https://ekkeramik.dk/">` (signals the language)
+- Add `changefreq` and `lastmod` to sitemap.xml
+- Consider adding Twitter Card meta tags
 
-### 9. Billeder
-- Tilf beskrivende filnavne (fx `handlavet-keramik-skal.jpg` i stedet for `ek1.jpg`)
-- Generer WebP-versioner af billeder for bedre komprimering
-- Overvej at tilf en image sitemap
+### 6. Get backlinks
+- Get links from exhibition/market websites (Sanderumgaard, Clausholm, Langeso)
+- Verninge Husflid should link back to ekkeramik.dk
+- Register with Danish business directories: Krak, Eniro, De Gule Sider
+- Register with craft directories: Dansk Kunsthandvaerk, Danish Crafts
+- Contact local media/blogs about feature articles
+
+### 7. Social media signals
+- Post regularly on Instagram with links to the website
+- Create/maintain a Facebook page linking to ekkeramik.dk
+- Share blog posts (if created) on social media
+
+---
+
+## Low priority / nice-to-have
+
+### 8. Additional structured data
+- Add `Event` schema for upcoming markets/exhibitions
+- Add `Course` schema for ceramic courses
+- Add `Product` schema if individual products are shown
+
+### 9. Image optimizations
+- Use descriptive filenames (e.g. `handmade-ceramic-bowl.jpg` instead of `ek1.jpg`)
+- Generate WebP versions of images for better compression
+- Consider adding an image sitemap
