@@ -1,5 +1,5 @@
 ---
-title: Portfolio
+title: Galleri
 images:
   - img/ek1.jpg
   - img/ek2.jpg
