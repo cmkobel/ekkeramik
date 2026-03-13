@@ -25,13 +25,13 @@ Pushing to `master` triggers `.github/workflows/jekyll-gh-pages.yml`, which buil
 The site uses a single layout (`_layouts/front.html`) that composes the page entirely from includes. `index.html` (root) uses `layout: front` and has no body content of its own — all sections live in `_includes/`.
 
 **Section order in `_layouts/front.html`:**
-navigation → header → portfolio → udstilling-og-salg → vaerksted → om → tidligere_udstillinger → kontakt → map → footer → scripts
+navigation → header → galleri → udstilling-og-salg → vaerksted → om → tidligere_udstillinger → kontakt → map → footer → scripts
 
 **Active includes:**
 - `head.html` — meta, CSS, favicon; description and author populated from `_config.yml`
 - `navigation.html` — slide-in sidebar with links to all sections
 - `header.html` — hero section with logo (`img/ekkeramik_sort_web.png`) and "Læs mere" CTA button
-- `portfolio.html` — 4 portfolio images (ek1–ek4) plus Instagram link (`@evakobel`)
+- `galleri.html` — 4 gallery images (ek1–ek4) plus Instagram link (`@evakobel`)
 - `udstilling-og-salg.html` — address/opening info, upcoming markets (Sanderumgaard, Clausholm, Langesø) and permanent sales location (Torup Bakkegård)
 - `vaerksted.html` — open workshop/ceramic course info; links to Verninge Husflid for course registration
 - `om.html` — about section with Danish biography and portrait photo
@@ -50,7 +50,7 @@ navigation → header → portfolio → udstilling-og-salg → vaerksted → om 
 - `img/ek_ikon_sort_web_kvadrat.png` — favicon (square icon)
 - `img/ek_ikon_sort_web.png` — icon variant
 - `img/ek_portrait1.jpg` — portrait photo (used in om.html)
-- `img/ek1.jpg`–`img/ek4.jpg` — portfolio images (used in portfolio.html)
+- `img/ek1.jpg`–`img/ek4.jpg` — gallery images (used in galleri.html)
 - `img/bg.jpg` — hero header background image
 - `img/callout.jpg` — unused background image (kept for potential future use)
 
