@@ -8,11 +8,12 @@ Single-page Jekyll portfolio website for EK Keramik (Eva Kobel, ceramics artist)
 
 ## Local Development
 
-No Gemfile is present; Jekyll must be installed separately.
+Ruby and Jekyll are managed via [pixi](https://pixi.sh) (`pixi.toml`). No global Ruby/Jekyll install needed.
 
 ```bash
-jekyll serve   # Build and serve at localhost:4000
-jekyll build   # Build static site to _site/
+pixi run install   # One-time: install Jekyll into pixi's Ruby environment
+pixi run serve     # Build and serve at localhost:4000
+pixi run build     # Build static site to _site/
 ```
 
 ## Deployment
