@@ -7,11 +7,12 @@ version = "0.1.0"
 
 [tasks]
 install = "gem install jekyll"
-serve = "jekyll serve"
 build = "jekyll build"
+serve = "jekyll serve"
 
 [dependencies]
 ruby = ">=3.0"
 c-compiler = "*"
 cxx-compiler = "*"
 make = "*"
+imagemagick = ">=7.1.2_16,<8"
