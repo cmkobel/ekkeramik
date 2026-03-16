@@ -10,7 +10,10 @@
       </div>
       {% if section.image %}
       <div class="col-lg-3 text-center">
-        <img src="{{ section.image }}" alt="{{ section.title }}" class="section-image" width="401" height="540" loading="lazy">
+        <picture>
+          <source srcset="{{ section.image | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.image }}" alt="{{ section.title }}" class="section-image" width="401" height="540" loading="lazy">
+        </picture>
       </div>
       {% endif %}
     </div>
