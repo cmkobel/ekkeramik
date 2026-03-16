@@ -1,6 +1,6 @@
 ---
 title: Åbent værksted – Workshop
-image: img/tools2.jpg
+image: img/keramik-vaerktoej.jpg
 cta_text: Se kurser
 cta_url: "https://verninge.husflid.dk/kurser?sted=Keramikv%C3%A6rkstedet%20Sandager"
 ---

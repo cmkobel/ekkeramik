@@ -49,10 +49,14 @@ navigation → header → galleri → udstilling-og-salg → vaerksted → om �
 - `img/ekkeramik_sort_web.png` — main logo (used in header)
 - `img/ek_ikon_sort_web_kvadrat.png` — favicon (square icon)
 - `img/ek_ikon_sort_web.png` — icon variant
-- `img/ek_portrait1.jpg` — portrait photo (used in om.html)
-- `img/ek1.jpg`–`img/ek4.jpg` — gallery images (used in galleri.html)
-- `img/bg.jpg` — hero header background image
-- `img/callout.jpg` — unused background image (kept for potential future use)
+- `img/eva-kobel-portraet.jpg` — portrait photo (used in om.html)
+- `img/haandlavede-keramik-skaale.jpg` — gallery: colorful bowls
+- `img/keramik-figurer-paa-sokkel.jpg` — gallery: figure sculptures
+- `img/groen-glaseret-skulptur.jpg` — gallery: green glazed sculpture
+- `img/keramik-fad-med-svaler.jpg` — gallery: plate with swallows
+- `img/farverige-keramik-kander.jpg` — hero header background image
+- `img/keramik-vaerktoej.jpg` — workshop tools (used in vaerksted)
+- `img/keramik-butik.jpeg` — shop/showroom (used in banner-butik)
 
 **Map:** `map.html` uses Leaflet.js (CDN) with OpenStreetMap tiles. The map is static (non-interactive) with a permanent tooltip marker at Torupvej 7, Sandager (55.32779, 9.93626). Clicking anywhere on the map opens `https://maps.app.goo.gl/f6z2HgVGCYrWafji7` in a new tab via a transparent overlay link.
 
