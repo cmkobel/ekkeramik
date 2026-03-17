@@ -19,6 +19,13 @@ document.getElementById('menu-toggle').addEventListener('click', function(e) {
   document.getElementById('sidebar-wrapper').classList.toggle('active');
 });
 
+// Close sidebar when a nav link is clicked
+document.querySelectorAll('.sidebar-nav a[href^="#"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.getElementById('sidebar-wrapper').classList.remove('active');
+  });
+});
+
 // Smooth scroll for anchor links
 document.addEventListener('click', function(e) {
   var link = e.target.closest('a[href*="#"]:not([href="#"])');
