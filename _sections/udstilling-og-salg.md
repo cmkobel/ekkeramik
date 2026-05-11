@@ -9,7 +9,7 @@ markets:
     date: Søndag d. 31. maj 2026 kl. 10–16
   - name: Lillebæltværftets Venner, Middelfart
     url: https://lillebæltværftetsvenner.dk/aabent-hus
-    date: Søn. d. 21. juni kl. 10-16 & Søn. d. 19. kl. 10-16
+    date: Søndag d. 21. juni & Søndag d. 19. juli 2026 kl. 10-16
 shops:
   - name: Torupvej 7, Sandager, 5610 Assens
     url: https://maps.app.goo.gl/f6z2HgVGCYrWafji7
