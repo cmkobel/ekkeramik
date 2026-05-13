@@ -22,6 +22,7 @@
           <div class="col-md-4">
             <div class="salg-item">
               <strong><a href="{{ market.url }}" target="_blank" rel="noopener noreferrer">{{ market.name }}</a></strong>
+              {% if market.description %}<span>{{ market.description }}</span>{% endif %}
               <span>{{ market.date }}</span>
             </div>
           </div>
