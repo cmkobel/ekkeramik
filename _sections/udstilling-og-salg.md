@@ -7,9 +7,9 @@ markets:
   - name: Forårsmarked Langesø
     url: https://langesoe.dk/marked-messe/
     date: Søndag d. 31. maj 2026 kl. 10–16
-  - name: Lillebæltværftets Venner
+  - name: Kunsthåndværkermarked Lillebælt
     url: https://lillebæltværftetsvenner.dk/aabent-hus
-    description: Kunsthåndværkermarked Lillebælt
+    description: Lillebæltværftets Venner
     date: Søndag d. 21. juni og<br>Søndag d. 19. juli 2026 kl. 10-16
 shops:
   - name: Torupvej 7, Sandager, 5610 Assens
