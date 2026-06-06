@@ -12,7 +12,7 @@
             <div class="salg-item">
               <strong><a href="{{ shop.url }}" target="_blank" rel="noopener noreferrer">{{ shop.name }}</a></strong>
               <span>{{ shop.description }}</span>
-              {% if shop.address %}<span>{{ shop.address }}</span>{% endif %}
+              {% if shop.address %}<span><a href="https://www.google.com/maps/search/?api=1&query={{ shop.address | url_encode }}" target="_blank" rel="noopener noreferrer">{{ shop.address }}</a></span>{% endif %}
             </div>
           </div>
           {% endfor %}
@@ -24,8 +24,8 @@
             <div class="salg-item">
               <strong><a href="{{ market.url }}" target="_blank" rel="noopener noreferrer">{{ market.name }}</a></strong>
               {% if market.description %}<span>{{ market.description }}</span>{% endif %}
-              {% if market.address %}<span>{{ market.address }}</span>{% endif %}
               <span>{{ market.date }}</span>
+              {% if market.address %}<span><a href="https://www.google.com/maps/search/?api=1&query={{ market.address | url_encode }}" target="_blank" rel="noopener noreferrer">{{ market.address }}</a></span>{% endif %}
             </div>
           </div>
           {% endfor %}

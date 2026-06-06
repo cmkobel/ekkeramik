@@ -303,7 +303,7 @@ hr.small {
 /* Tidligere udstillinger */
 
 .udstillinger {
-    padding: 40px 0;
+    padding: 50px 0;
     background-color: #f8f8f8;
 }
 
@@ -351,6 +351,12 @@ hr.small {
     }
 }
 
+/* Kontakt */
+
+.contact {
+    padding: 50px 0;
+}
+
 /* Map */
 
 .map {
@@ -366,6 +372,13 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #eeeeee;
+    font-size: 1.15em;
+    line-height: 1.6;
+}
+
+footer h4 {
+    font-size: 1.6em;
+    margin-bottom: 16px;
 }
