@@ -21,7 +21,7 @@ shops:
     address: Torupvej 7, Sandager, 5610 Assens
   - name: One More Gallery
     url: https://one-more-gallery.dk/
-    description: Butik på gågaden i Assens
+    description: Butik på hovedgaden i Assens
     address: Østergade 32, 5610 Assens
   - name: Torup Bakkegård – gårdbutik
     url: https://torupbakkegaard.dk/gaardbutikken/
