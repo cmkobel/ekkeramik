@@ -75,9 +75,9 @@ hr.small {
     z-index: 1100;
     position: fixed;
     right: 0;
-    width: 250px;
+    width: 290px;
     height: 100%;
-    margin-right: -250px;
+    margin-right: -290px;
     overflow-y: auto;
     background: #222;
     transition: all 0.4s ease 0s;
@@ -86,7 +86,7 @@ hr.small {
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 290px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -94,12 +94,12 @@ hr.small {
 
 .sidebar-nav li {
     text-indent: 20px;
-    line-height: 48px;
+    line-height: 60px;
 }
 
 .sidebar-nav li a {
     display: block;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
     color: #999;
 }
@@ -116,9 +116,9 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 20px;
-    line-height: 55px;
+    height: 65px;
+    font-size: 24px;
+    line-height: 65px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -138,13 +138,14 @@ hr.small {
 }
 
 #sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
+    right: 290px;
+    width: 290px;
     transition: all 0.4s ease 0s;
 }
 
 .toggle {
-    margin: 5px 5px 0 0;
+    margin: 8px 8px 0 0;
+    padding: 14px 20px;
 }
 
 /* Header */
