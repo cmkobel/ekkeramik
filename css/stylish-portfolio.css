@@ -143,9 +143,47 @@ hr.small {
     transition: all 0.4s ease 0s;
 }
 
+@media(max-width: 480px) {
+    #sidebar-wrapper,
+    .sidebar-nav {
+        width: 240px;
+    }
+    #sidebar-wrapper {
+        margin-right: -240px;
+    }
+    #sidebar-wrapper.active {
+        right: 240px;
+        width: 240px;
+    }
+    .sidebar-nav li {
+        line-height: 52px;
+    }
+    .sidebar-nav li a {
+        font-size: 17px;
+    }
+    .sidebar-nav > .sidebar-brand {
+        height: 56px;
+        font-size: 21px;
+        line-height: 56px;
+    }
+}
+
 .toggle {
-    margin: 8px 8px 0 0;
-    padding: 14px 20px;
+    margin: 12px 12px 0 0;
+    padding: 12px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    line-height: 1;
+}
+
+@media(max-width: 768px) {
+    .toggle {
+        margin: 10px 10px 0 0;
+        padding: 10px;
+        width: 44px;
+        height: 44px;
+    }
 }
 
 /* Header */
@@ -157,6 +195,12 @@ hr.small {
     height: 100%;
     background: url(../img/farverige-keramik-kander.webp) no-repeat center center scroll;
     background-size: cover;
+}
+
+@media(max-width: 768px) {
+    .header {
+        height: 70vh;
+    }
 }
 
 .no-webp .header {
@@ -357,6 +401,16 @@ hr.small {
     padding: 50px 0;
 }
 
+.contact .btn-dark {
+    background-color: #222;
+}
+
+.contact .btn-dark:hover,
+.contact .btn-dark:focus,
+.contact .btn-dark:active {
+    background-color: #000;
+}
+
 /* Map */
 
 .map {
@@ -374,11 +428,19 @@ hr.small {
 footer {
     padding: 50px 0;
     background-color: #eeeeee;
-    font-size: 1.15em;
-    line-height: 1.6;
+    font-size: 1.3em;
+    line-height: 1.7;
 }
 
 footer h4 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-bottom: 16px;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 12px;
+}
+
+footer .list-unstyled li:last-child {
+    margin-bottom: 0;
 }

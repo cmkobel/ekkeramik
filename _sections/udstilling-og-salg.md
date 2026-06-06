@@ -20,12 +20,12 @@ shops:
     description: "Åbent efter aftale! Sms: 29467904"
     address: Torupvej 7, Sandager, 5610 Assens
   - name: One More Gallery
-    url: https://one-more-gallery.dk/omg-1/kontakt
+    url: https://one-more-gallery.dk/
     description: Butik på gågaden i Assens
     address: Østergade 32, 5610 Assens
   - name: Torup Bakkegård – gårdbutik
     url: https://torupbakkegaard.dk/gaardbutikken/
-    description: "Udstiller fra påske til jul.<br>Skåle · kander · tallerkner"
+    description: "Udstiller fra påske til jul<br>Skåle · kander · tallerkner"
     address: Middelfartvej 105, 5610 Assens
 facebook_text: Følg med på Facebook
 facebook_url: "https://www.facebook.com/eva.kobel.3/?locale=da_DK"

@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://ekkeramik.dk" # the base hostname & protocol for your site
 
 # User setting
-owner: EK Keramik - Eva Kobel
+owner: EK Keramik – Eva Kobel
 email: evakobel7@gmail.com
 facebook_username: eva.kobel.3
 #twitter_username:
