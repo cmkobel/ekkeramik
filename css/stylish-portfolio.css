@@ -94,11 +94,12 @@ hr.small {
 
 .sidebar-nav li {
     text-indent: 20px;
-    line-height: 40px;
+    line-height: 48px;
 }
 
 .sidebar-nav li a {
     display: block;
+    font-size: 17px;
     text-decoration: none;
     color: #999;
 }
@@ -116,7 +117,7 @@ hr.small {
 
 .sidebar-nav > .sidebar-brand {
     height: 55px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 55px;
 }
 

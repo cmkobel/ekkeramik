@@ -2,7 +2,7 @@
 title: Keramiker Eva Kobel
 image: img/eva-kobel-portraet.jpg
 ---
-**Medlem af Dansk Pottemagerforening**
+### Medlem af Dansk Pottemagerforening
 
 Billedkunst og musik har fulgt mig hele livet. Form og farve for øjet - og øret! Rytmer, linjer og retninger. Skulpturer har jeg også lavet i gips og beton, men i de senere år er jeg blevet dybt fanget af det brændte ler. Den alkymistiske proces fra det brune mudder til de stramme former med masser af glade farver. 
 
