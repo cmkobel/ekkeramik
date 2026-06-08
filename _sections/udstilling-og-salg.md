@@ -23,14 +23,14 @@ shops:
     url: https://one-more-gallery.dk/
     description: Butik på hovedgaden i Assens
     address: Østergade 32, 5610 Assens
-  - name: Lokal'et
-    url: https://lokal-et.dk/
-    description: Lokal'et sælger lokale specialiteter
-    address: Willemoesgade 2d, 5610 Assens
   - name: Torup Bakkegård – gårdbutik
     url: https://torupbakkegaard.dk/gaardbutikken/
     description: "Udstiller fra påske til jul<br>Skåle · kander · tallerkner"
     address: Middelfartvej 105, 5610 Assens
+  - name: Lokal'et
+    url: https://lokal-et.dk/
+    description: Lokal'et sælger lokale specialiteter
+    address: Willemoesgade 2d, 5610 Assens
 facebook_text: Følg med på Facebook
 facebook_url: "https://www.facebook.com/eva.kobel.3/?locale=da_DK"
 ---
