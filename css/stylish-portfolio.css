@@ -452,6 +452,16 @@ hr.small {
     height: 500px;
 }
 
+.map .leaflet-popup-content {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 12px 16px;
+}
+
+.map .leaflet-popup-content strong {
+    font-size: 17px;
+}
+
 @media(max-width:768px) {
     .map {
         height: 75%;

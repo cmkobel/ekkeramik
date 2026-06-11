@@ -3,7 +3,7 @@ title: Udstilling og salg
 markets:
   - name: Forårsmarked Sanderumgaard
     url: https://www.sanderumgaard.dk/marked
-    address: Sanderumgaardvej 150, 5220 Odense SØ
+    address: Sanderumgårdvej 150, 5220 Odense
     date: Søndag d. 3. maj 2026 kl. 10–16
   - name: Forårsmarked Langesø
     url: https://langesoe.dk/marked-messe/

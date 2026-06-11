@@ -1,22 +1,82 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<section id="map" class="map" style="position: relative;">
+<section id="map" class="map">
   <div id="leaflet-map" style="width: 100%; height: 100%;"></div>
-  <a href="https://maps.app.goo.gl/f6z2HgVGCYrWafji7" target="_blank" rel="noopener noreferrer"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; cursor: pointer;"></a>
 </section>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-  var map = L.map('leaflet-map', {
-    dragging: false,
-    touchZoom: false,
-    doubleClickZoom: false,
-    scrollWheelZoom: false,
-    boxZoom: false,
-    keyboard: false,
-    zoomControl: false
-  }).setView([55.32779, 9.93626], 13.2);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
-  var marker = L.marker([55.32779, 9.93626]).addTo(map);
+  (function() {
+    {% assign salg = site.sections | where: "slug", "udstilling-og-salg" | first %}
+    var points = [
+      {% for shop in salg.shops %}{ type: "shop", name: {{ shop.name | jsonify }}, address: {{ shop.address | jsonify }}, url: {{ shop.url | jsonify }}, description: {{ shop.description | jsonify }}, lat: {{ shop.lat | jsonify }}, lng: {{ shop.lng | jsonify }} },
+      {% endfor %}
+      {% for market in salg.markets %}{ type: "market", name: {{ market.name | jsonify }}, address: {{ market.address | jsonify }}, url: {{ market.url | jsonify }}, description: {{ market.description | jsonify }}, date: {{ market.date | jsonify }}, lat: {{ market.lat | jsonify }}, lng: {{ market.lng | jsonify }} },
+      {% endfor %}
+    ];
+
+    var map = L.map('leaflet-map', {
+      scrollWheelZoom: false
+    }).setView([55.32779, 9.93626], 9);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var markers = [];
+
+    function buildPopup(p) {
+      var parts = ['<strong>' + p.name + '</strong>'];
+      if (p.description) parts.push(p.description);
+      if (p.date) parts.push(p.date);
+      parts.push('<a href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.address) + '" target="_blank" rel="noopener noreferrer">' + p.address + '</a>');
+      if (p.url) parts.push('<a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Mere info →</a>');
+      return parts.join('<br>');
+    }
+
+    function geocode(address) {
+      var cacheKey = 'ekgeo:' + address;
+      var cached = localStorage.getItem(cacheKey);
+      if (cached) {
+        try { return Promise.resolve(JSON.parse(cached)); } catch (_) {}
+      }
+      var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(address);
+      return fetch(url)
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          if (!data.length) return null;
+          var pt = { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon) };
+          try { localStorage.setItem(cacheKey, JSON.stringify(pt)); } catch (_) {}
+          return pt;
+        })
+        .catch(function() { return null; });
+    }
+
+    function addMarker(p, lat, lon) {
+      var m = L.marker([lat, lon]).addTo(map);
+      m.bindPopup(buildPopup(p));
+      markers.push(m);
+    }
+
+    function processNext(i) {
+      if (i >= points.length) {
+        if (markers.length) {
+          var group = L.featureGroup(markers);
+          map.fitBounds(group.getBounds(), { padding: [40, 40], maxZoom: 13 });
+        }
+        return;
+      }
+      var p = points[i];
+      if (p.lat != null && p.lng != null) {
+        addMarker(p, p.lat, p.lng);
+        processNext(i + 1);
+        return;
+      }
+      var wasCached = !!localStorage.getItem('ekgeo:' + p.address);
+      geocode(p.address).then(function(pt) {
+        if (pt) addMarker(p, pt.lat, pt.lon);
+        setTimeout(function() { processNext(i + 1); }, wasCached ? 0 : 1100);
+      });
+    }
+
+    processNext(0);
+  })();
 </script>
