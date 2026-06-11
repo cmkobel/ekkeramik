@@ -204,15 +204,9 @@ hr.small {
     display: table;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     background: url(../img/farverige-keramik-kander.webp) no-repeat center center scroll;
     background-size: cover;
-}
-
-@media(max-width: 768px) {
-    .header {
-        height: 70vh;
-    }
 }
 
 .no-webp .header {
@@ -239,6 +233,7 @@ hr.small {
 
 .about {
     padding: 50px 0;
+    background-color: #f8f8f8;
 }
 
 /* Section Image */
@@ -301,7 +296,6 @@ hr.small {
 
 .udstilling-og-salg {
     padding: 50px 0;
-    background-color: #f8f8f8;
 }
 
 .salg-item {
