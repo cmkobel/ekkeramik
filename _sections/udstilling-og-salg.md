@@ -19,6 +19,7 @@ shops:
     url: https://maps.app.goo.gl/f6z2HgVGCYrWafji7
     description: "Åbent efter aftale! Sms: 29467904"
     address: Torupvej 7, Sandager, 5610 Assens
+    featured: true
   - name: One More Gallery
     url: https://one-more-gallery.dk/
     description: Butik på hovedgaden i Assens
