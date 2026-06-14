@@ -446,6 +446,11 @@ hr.small {
     background-color: #000;
 }
 
+.contact .required {
+    color: #c00;
+    margin-left: 2px;
+}
+
 /* Map */
 
 .map {
