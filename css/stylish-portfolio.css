@@ -450,6 +450,7 @@ hr.small {
 
 .map {
     height: 500px;
+    max-height: 90vh;
 }
 
 .map .leaflet-popup-content {
@@ -462,9 +463,34 @@ hr.small {
     font-size: 17px;
 }
 
+.map-handle {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-handle-top {
+    background: #fff;
+}
+
+.map-handle-bottom {
+    background: #eeeeee;
+}
+
+.map-handle::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 999px;
+    background: #999;
+}
+
 @media(max-width:768px) {
     .map {
         height: 75%;
+        max-height: 90vh;
     }
 }
 
