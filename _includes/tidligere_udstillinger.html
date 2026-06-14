@@ -1,11 +1,12 @@
 {% assign section = site.sections | where: "slug", "tidligere_udstillinger" | first %}
+{% assign past_venues = site.data.venues | where: "active", false %}
 <section id="udstillinger" class="udstillinger">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
         <h2>{{ section.title }}</h2>
         <div class="udstillinger-grid">
-          {% for exhibition in section.exhibitions %}
+          {% for exhibition in past_venues %}
           <div class="udstilling-item">
             <strong><a href="{{ exhibition.url }}" target="_blank" rel="noopener noreferrer">{{ exhibition.name }}</a></strong>
             {% if exhibition.description %}

@@ -1,0 +1,120 @@
+# Single source of truth for shops, markets, and past venues.
+# Flip `active` to move an entry between "Udstilling og salg" and "Tidligere udstillinger".
+#   active: true  → shows under "Udstilling og salg" (in the "Butikker" or "Markeder" group, by `type`)
+#                   uses name, url, description, address, date, featured
+#   active: false → shows under "Tidligere udstillinger"
+#                   uses name, url, description only
+#
+# Past venues are rendered in YAML order. To put a newly-retired venue at the top of
+# "Tidligere udstillinger", place it at the top of the past block below.
+
+# === Aktive ===
+
+- name: Eva Kobels butik
+  type: shop
+  active: true
+  url: https://maps.app.goo.gl/f6z2HgVGCYrWafji7
+  description: "Åbent efter aftale! Sms: 29467904"
+  address: Torupvej 7, Sandager, 5610 Assens
+  featured: true
+
+- name: One More Gallery
+  type: shop
+  active: true
+  url: https://one-more-gallery.dk/
+  description: Butik på hovedgaden i Assens
+  address: Østergade 32, 5610 Assens
+
+- name: Torup Bakkegård – gårdbutik
+  type: shop
+  active: true
+  url: https://torupbakkegaard.dk/gaardbutikken/
+  description: "Udstiller fra påske til jul<br>Skåle · kander · tallerkner"
+  address: Middelfartvej 105, 5610 Assens
+
+- name: Lokal'et
+  type: shop
+  active: true
+  url: https://lokal-et.dk/
+  description: Lokal'et sælger lokale specialiteter
+  address: Willemoesgade 2d, 5610 Assens
+
+- name: Forårsmarked Langesø
+  type: market
+  active: true
+  url: https://langesoe.dk/marked-messe/
+  address: Langesøvej 146, 5462 Morud
+  date: Søndag d. 31. maj 2026 kl. 10–16
+
+- name: Kunsthåndværkermarked Lillebælt
+  type: market
+  active: true
+  url: https://lillebæltværftetsvenner.dk/aabent-hus
+  description: Lillebæltværftets Venner
+  address: Havnegade 98, 5500 Middelfart
+  date: Søndag d. 21. juni og<br>Søndag d. 19. juli 2026 kl. 10-16
+
+# === Tidligere (nyeste øverst) ===
+
+- name: Høstmarked Langesø
+  active: false
+  url: "https://www.facebook.com/events/langes%C3%B8vej-146-5462-morud-danmark/kunst-og-h%C3%B8stmarked-ved-langes%C3%B8/600102059824851/"
+
+- name: Høstmarked Nørregård
+  active: false
+  url: https://www.bernardshus.dk/
+
+- name: Æblefestival Assens Fødevaremarked
+  active: false
+  url: https://www.aeblefestivalassens.dk/foedevaremarked/
+
+- name: Julemarked Filosoffen
+  active: false
+  url: https://kulturmaskinen.dk/filosoffen/udstillinger-og-events
+
+- name: Forårsmarked Sanderumgaard
+  type: market
+  active: false
+  url: https://www.sanderumgaard.dk/marked
+  address: Sanderumgårdvej 150, 5220 Odense
+  date: Søndag d. 3. maj 2026 kl. 10–16
+
+- name: Galleri Langager
+  active: false
+  url: https://www.gallerilangager.dk/
+  description: Foreningsdrevet Kunstgalleri og Café, Helnæs. Medlem 2019–2024
+
+- name: Lillebælt Værftet
+  active: false
+  url: https://www.lillebaeltsvaerftet.dk/
+  description: Kunsthåndværkermarked, sommersøndage. Det gamle skibsværft i Middelfart
+
+- name: Kunstforeningen Industrien i Aarup
+  active: false
+  url: https://www.kulturhusetindustrien.dk/
+  description: Julemarked i december 2023. Julesalg af årets kunstnere
+
+- name: Industrien i Aarup
+  active: false
+  url: https://www.kulturhusetindustrien.dk/
+  description: "Udstiller sammen med [Karina Helledie Vandkrog](https://www.instagram.com/artbykhelledie){:target=\"_blank\" rel=\"noopener noreferrer\"}. En udstilling der tager udgangspunkt i naturens kraft, lys og livfuldhed."
+
+- name: Hørvævsmuseet på Krengerup slot
+  active: false
+  url: https://hoervaevsmuseet.dk/
+  description: Livfuld keramik 13.6.–16.7.2023. Lertøj i klare glade farver står smukt sammen med hørrets søvgrå. Skåle, kander, fade, krukker – og en flok får!
+
+- name: Naturaftryk – en sanseudstilling
+  active: false
+  url: https://www.gallerilangager.dk/
+  description: 3.6.–4.7.2022, Galleri Langager. 4 kunstnere om naturen og de aftryk, indtryk og udtryk den kommer med. Reception og artisttalk 4.6.2022 kl. 14.00.
+
+- name: Galleri Knægt, Bogense
+  active: false
+  url: https://galleriknaegt.dk/
+  description: Event i gårdhaven, august 2020
+
+- name: Vejle Kunstforening Møllen
+  active: false
+  url: http://www.vejlekunstforeningmoellen.dk/
+  description: December 2020 og 2022

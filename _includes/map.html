@@ -8,11 +8,9 @@
 <script src="https://cdn.jsdelivr.net/npm/overlapping-marker-spiderfier-leaflet/dist/oms.min.js"></script>
 <script>
   (function() {
-    {% assign salg = site.sections | where: "slug", "udstilling-og-salg" | first %}
+    {% assign active_venues = site.data.venues | where: "active", true %}
     var points = [
-      {% for shop in salg.shops %}{ type: "shop", name: {{ shop.name | jsonify }}, address: {{ shop.address | jsonify }}, url: {{ shop.url | jsonify }}, description: {{ shop.description | jsonify }}, lat: {{ shop.lat | jsonify }}, lng: {{ shop.lng | jsonify }}, featured: {{ shop.featured | jsonify }} },
-      {% endfor %}
-      {% for market in salg.markets %}{ type: "market", name: {{ market.name | jsonify }}, address: {{ market.address | jsonify }}, url: {{ market.url | jsonify }}, description: {{ market.description | jsonify }}, date: {{ market.date | jsonify }}, lat: {{ market.lat | jsonify }}, lng: {{ market.lng | jsonify }}, featured: {{ market.featured | jsonify }} },
+      {% for v in active_venues %}{ type: {{ v.type | jsonify }}, name: {{ v.name | jsonify }}, address: {{ v.address | jsonify }}, url: {{ v.url | jsonify }}, description: {{ v.description | jsonify }}, date: {{ v.date | jsonify }}, lat: {{ v.lat | jsonify }}, lng: {{ v.lng | jsonify }}, featured: {{ v.featured | jsonify }} },
       {% endfor %}
     ];
 

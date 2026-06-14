@@ -1,13 +1,16 @@
 {% assign section = site.sections | where: "slug", "udstilling-og-salg" | first %}
+{% assign active_venues = site.data.venues | where: "active", true %}
+{% assign shops = active_venues | where: "type", "shop" %}
+{% assign markets = active_venues | where: "type", "market" %}
 <section id="udstilling-og-salg" class="udstilling-og-salg">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
         <h2>{{ section.title }}</h2>
-        <p class="lead">{{ section.lead }}</p>
+        {% if shops.size > 0 %}
         <h3>Butikker</h3>
         <div class="row">
-          {% for shop in section.shops %}
+          {% for shop in shops %}
           <div class="col-md-4">
             <div class="salg-item">
               <strong><a href="{{ shop.url }}" target="_blank" rel="noopener noreferrer">{{ shop.name }}</a></strong>
@@ -17,9 +20,11 @@
           </div>
           {% endfor %}
         </div>
+        {% endif %}
+        {% if markets.size > 0 %}
         <h3>Markeder</h3>
         <div class="row">
-          {% for market in section.markets %}
+          {% for market in markets %}
           <div class="col-md-4">
             <div class="salg-item">
               <strong><a href="{{ market.url }}" target="_blank" rel="noopener noreferrer">{{ market.name }}</a></strong>
@@ -30,6 +35,7 @@
           </div>
           {% endfor %}
         </div>
+        {% endif %}
         <div class="text-center">
           <a href="{{ section.facebook_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-facebook"><svg width="16" height="16" viewBox="0 0 320 512" fill="currentColor" aria-hidden="true" style="vertical-align: middle; margin-right: 4px;"><path d="M279.1 288l14.2-92.7h-89V134.7c0-25.4 12.4-50.1 52.2-50.1H297V6.3S260 0 224.4 0c-73.2 0-121 44.4-121 124.7v70.6H22.9V288h80.5v224h99V288z"/></svg> {{ section.facebook_text }}</a>
         </div>
