@@ -458,6 +458,12 @@ hr.small {
     max-height: 90vh;
 }
 
+.leaflet-bar a.leaflet-control-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .map .leaflet-popup-content {
     font-size: 15px;
     line-height: 1.5;

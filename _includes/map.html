@@ -22,6 +22,34 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    var markers = [];
+
+    function fitAll() {
+      if (!markers.length) return;
+      var group = L.featureGroup(markers);
+      map.fitBounds(group.getBounds(), { padding: [40, 40], maxZoom: 13 });
+    }
+
+    var HomeControl = L.Control.extend({
+      options: { position: 'topleft' },
+      onAdd: function() {
+        var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        var btn = L.DomUtil.create('a', 'leaflet-control-home', container);
+        btn.href = '#';
+        btn.title = 'Vis alle udstillingssteder';
+        btn.setAttribute('role', 'button');
+        btn.setAttribute('aria-label', 'Vis alle udstillingssteder');
+        btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.5l-6.5 5.5h2V14h3v-4h3v4h3V7h2L8 1.5z"/></svg>';
+        L.DomEvent.on(btn, 'click', function(e) {
+          L.DomEvent.preventDefault(e);
+          L.DomEvent.stopPropagation(e);
+          fitAll();
+        });
+        return container;
+      }
+    });
+    new HomeControl().addTo(map);
+
     var oms = new OverlappingMarkerSpiderfier(map, { keepSpiderfied: true, nearbyDistance: 20 });
     var popup = L.popup({ offset: [0, -34] });
     oms.addListener('click', function(marker) {
@@ -46,7 +74,6 @@
     }
 
     var featuredIcon = makePin('#e6683c');
-    var markers = [];
 
     function buildPopup(p) {
       var parts = ['<strong>' + p.name + '</strong>'];
@@ -85,10 +112,7 @@
 
     function processNext(i) {
       if (i >= points.length) {
-        if (markers.length) {
-          var group = L.featureGroup(markers);
-          map.fitBounds(group.getBounds(), { padding: [40, 40], maxZoom: 13 });
-        }
+        fitAll();
         return;
       }
       var p = points[i];
